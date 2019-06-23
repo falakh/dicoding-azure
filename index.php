@@ -65,7 +65,7 @@
         </form>   
    
  <?php
-    $host = "registration1.database.windows.net";
+    $host = "dicodingbayar.database.windows.net";
     $user = "dicoding";
     $pass = "fahmi1234567890";
     $db = "sportest";
