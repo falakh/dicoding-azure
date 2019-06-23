@@ -71,7 +71,7 @@
     $db = "sportest";
 
     try {
-        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
+        $conn = new PDO("sqlsrv:server = tcp:dicodingbayar.database.windows.net,1433; Database = sportest", "dicoding", "Fahmi1234567890");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     } catch(Exception $e) {
         echo "Failed: " . $e;
