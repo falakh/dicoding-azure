@@ -65,13 +65,14 @@
         </form>   
    
  <?php
+
     $host = "dicodingbayar.database.windows.net";
     $user = "dicoding";
     $pass = "fahmi1234567890";
     $db = "sportest";
 
     try {
-        $conn = new PDO("sqlsrv:server = tcp:dicodingbayar.database.windows.net,1433; Database = sportest", "dicoding", "Fahmi1234567890");
+        $conn = new PDO("sqlsrv:server = tcp:dicodingbayar.database.windows.net,1433; Database = sportest", "dicoding", "{Fahmi1234567890}");
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     } catch(Exception $e) {
         echo "Failed: " . $e;
